@@ -13,7 +13,7 @@ const LatestViseSec = () => {
         setVisas(Data);
       });
   }, []);
-  console.log(visases);
+  // console.log(visases);
   return (
     <div
       className="relative h-auto bg-cover bg-center flex flex-col items-center justify-center"

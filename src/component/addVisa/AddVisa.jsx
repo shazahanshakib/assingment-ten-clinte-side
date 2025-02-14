@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import { AuthContext } from "../authProvider/AuthProvider";
 
 
 const AddVisa = () => {
 
+    const {user}= useContext(AuthContext)
+    const userEmail=user.email;
+    console.log(userEmail)
     const handleAddVisa=(e)=>{
         e.preventDefault();
         const form = e.target;
@@ -21,7 +26,7 @@ const AddVisa = () => {
             form.querySelectorAll("input[type=checkbox]:checked")
           ).map((checkbox) => checkbox.value);
 
-        const newVisa= {countryName, countryImage, visaType, age, fee, description, Validity, appMethod, processingTime, requiredDocuments}
+        const newVisa= {countryName, countryImage, visaType, age, fee, description, Validity, appMethod, processingTime, requiredDocuments, userEmail}
         
 
         console.log(newVisa)

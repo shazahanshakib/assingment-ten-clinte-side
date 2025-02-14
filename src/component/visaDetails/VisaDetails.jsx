@@ -45,6 +45,8 @@ const VisaDetails = () => {
     .then(data=>{
       console.log(data)
     })
+
+    setIsModalOpen(false)
   };
 
   return (

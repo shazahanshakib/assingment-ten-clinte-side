@@ -19,7 +19,7 @@ const Navbar = () => {
         <NavLink to="/addvisa">Add Visa</NavLink>
       </li>
       <li>
-        <a>My Added Visa</a>
+        <NavLink to="/myaddedvisa">My Added Visa</NavLink>
       </li>
       <li>
         <NavLink to="/myvisaapp">My Visa Application</NavLink>
@@ -84,7 +84,7 @@ const Navbar = () => {
         <div className="navbar-end">
           {user?(
               <div className="flex items-center gap-3 ">
-              <span className="max-sm:hidden">{user.displayName}</span>
+              <span className="max-sm:hidden">{user.email}</span>
               <Link to="/myprofile" className="text-xl">
                 <img className="w-[20px] rounded-lg" src={user.photoURL}></img>
               </Link>

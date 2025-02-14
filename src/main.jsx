@@ -14,6 +14,7 @@ import LayoutHome from "./component/layoutHome/LayoutHome";
 import VisaDetails from "./component/visaDetails/VisaDetails";
 import MyVisaApp from "./component/myVisaApp/MyVisaApp";
 import ErrorPage from "./component/errorPage/ErrorPage";
+import MyAddedVisa from "./component/myAddedVisa/MyAddedVisa";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,11 @@ const router = createBrowserRouter([
         path:"/myvisaapp",
         element:<PrivateRoute><MyVisaApp></MyVisaApp></PrivateRoute>,
         loader:()=>fetch('http://localhost:5000/visaapply')
+      },
+      {
+        path:"/myaddedvisa",
+        element:<PrivateRoute><MyAddedVisa></MyAddedVisa></PrivateRoute>,
+        loader: () => fetch("http://localhost:5000/allvisa"),
       }
     ],
   },

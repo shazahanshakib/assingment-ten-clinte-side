@@ -16,7 +16,7 @@ const SingIn = () => {
         const email= form.email.value 
         const password = form.password.value
   
-        console.log( email, password)
+        // console.log( email, password)
         singIn(email, password)
         .then((userCredential) => {
             // Signed in 
