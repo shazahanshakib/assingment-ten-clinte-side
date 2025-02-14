@@ -15,15 +15,15 @@ const MyVisaApp = () => {
     >
       <div className="absolute inset-0 bg-[#0c4a38] opacity-90"></div>
       <div className="relative flex items-center justify-center flex-col my-10">
-        <h3 className="text-center mb-8 w-[300px] text-[20px] font-bold border-2 py-2">
+        <h3 className="text-center mb-8 w-[200px] md:w-[300px] text-[20px] font-bold border-2 py-2">
           Your Visas
         </h3>
-        <h1 className="text-center text-6xl font-bold">
+        <h1 className="text-center text-4xl md:text-6xl font-bold">
           My Visa Application
         </h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 my-10 mx-20">
+      <div className="grid gap-7 my-10 mx-5 md:grid-cols-2 lg:grid-cols-3 sm:mx-4 lg:mx-5 xl:mx-20">
         {myVisa?.map((myvisas) => (
           <SingleMyVisa key={myvisas?._id} myvisas={myvisas} myVisa={myVisa} setMyVisa={setMyVisa}></SingleMyVisa>
         ))}

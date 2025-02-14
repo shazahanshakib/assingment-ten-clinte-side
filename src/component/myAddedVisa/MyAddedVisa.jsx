@@ -73,16 +73,16 @@ const MyAddedVisa = () => {
   return (
     <div className="h-auto bg-[#08312B] py-10">
       <div className="flex items-center justify-center flex-col ">
-        <h3 className="text-center mb-8 w-[300px] text-[20px] font-bold border-2 py-2">
+        <h3 className="text-center mb-8 w-[200px] md:w-[300px] text-[20px] font-bold border-2 py-2">
           Service we provide
         </h3>
-        <h1 className="text-center text-6xl font-bold">
+        <h1 className="text-center text-4xl md:text-6xl font-bold">
           My Added Visa on
           <br /> this Platform
         </h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 my-10 mx-20">
+      <div className="grid gap-7 my-10 mx-5 md:grid-cols-2 lg:grid-cols-3 sm:mx-4 lg:mx-5 xl:mx-20">
         {myVisa?.map((visas) => (
           <SingleVisa
             key={visas?._id}

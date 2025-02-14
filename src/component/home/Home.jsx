@@ -14,11 +14,11 @@ const Home = () => {
         >
           <img src={logoimg1} className="object-cover h-[600px] w-full" />
           <div className="absolute inset-0 bg-[linear-gradient(to_right,black,transparent,black)] opacity-70"></div>
-          <div className="absolute px-32">
-            <h1 className=" text-6xl font-black">
+          <div className="absolute flex flex-col justify-center items-center w-full px-4 md:items-start md:mx-14">
+            <h1 className="text-4xl font-black text-center sm:text-6xl ">
               We are professional <br /> expert in immigration
             </h1>
-            <p className="my-10">
+            <p className="my-10 text-center">
               We are a well known organigation to travel people in the many
               country. If you want, <br /> you can go anywhere with helping us
             </p>
@@ -37,11 +37,11 @@ const Home = () => {
         <div id="slide2" className="carousel-item relative w-full flex items-center">
           <img src={logoimg2} className="w-full object-cover h-[600px]" />
           <div className="absolute inset-0 bg-[linear-gradient(to_right,black,transparent,black)] opacity-70"></div>
-          <div className="absolute px-32">
-            <h1 className=" text-6xl font-black">
+          <div className="absolute flex flex-col justify-center items-center w-full px-4 md:items-start md:mx-14">
+            <h1 className=" text-4xl font-black text-center sm:text-6xl">
               We are professional <br /> expert in immigration
             </h1>
-            <p className="my-10">
+            <p className="my-10 text-center">
               We are a well known organigation to travel people in the many
               country. If you want, <br /> you can go anywhere with helping us
             </p>
@@ -59,11 +59,11 @@ const Home = () => {
         <div id="slide3" className="carousel-item relative w-full flex items-center">
           <img src={logoimg4} className="w-full object-cover h-[600px]" />
           <div className="absolute inset-0 bg-[linear-gradient(to_right,black,transparent,black)] opacity-70"></div>
-          <div className="absolute px-32">
-            <h1 className=" text-6xl font-black">
+          <div className="absolute flex flex-col justify-center items-center w-full px-4 md:items-start md:mx-14">
+            <h1 className=" text-4xl font-black text-center sm:text-6xl">
               We are professional <br /> expert in immigration
             </h1>
-            <p className="my-10">
+            <p className="my-10 text-center">
               We are a well known organigation to travel people in the many
               country. If you want, <br /> you can go anywhere with helping us
             </p>
@@ -81,11 +81,11 @@ const Home = () => {
         <div id="slide4" className="carousel-item relative w-full flex items-center">
           <img src={logoimg5} className="w-full object-cover h-[600px]" />
           <div className="absolute inset-0 bg-[linear-gradient(to_right,black,transparent,black)] opacity-70"></div>
-          <div className="absolute px-32">
-            <h1 className=" text-6xl font-black">
+          <div className="absolute flex flex-col justify-center items-center w-full px-4 md:items-start md:mx-14">
+            <h1 className=" text-4xl font-black text-center sm:text-6xl">
               We are professional <br /> expert in immigration
             </h1>
-            <p className="my-10">
+            <p className="my-10 text-center">
               We are a well known organigation to travel people in the many
               country. If you want, <br /> you can go anywhere with helping us
             </p>

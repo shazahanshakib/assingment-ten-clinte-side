@@ -52,36 +52,36 @@ const AddVisa = () => {
           </div>
           <form className="card-body" onSubmit={handleAddVisa}>
             {/* country image and country name  */}
-            <div className="flex gap-3">
+            <div className="md:flex gap-3">
               <div className="form-control">
-                <label className="label mb-2">
+                <label className="label mb-2 mr-2">
                   <span className="label-text">Country Name</span>
                 </label>
                 <input
                   type="text"
                   name="name"
                   placeholder="country name"
-                  className="input input-bordered"
+                  className="input input-bordered mb-3 w-full"
                   required
                 />
               </div>
               <div className="form-control">
-                <label className="label mb-2">
+                <label className="label mb-2 mr-2">
                   <span className="label-text">Country Image</span>
                 </label>
                 <input
                   type="text"
                   name="couimage"
                   placeholder="country image"
-                  className="input input-bordered"
+                  className="input input-bordered w-full"
                   required
                 />
               </div>
             </div>
 
             {/* select box and check box  */}
-            <div className="flex items-center justify-between gap-3 my-5">
-              <div className="w-full">
+            <div className="md:flex">
+              <div className="w-full my-5 md:my-0">
                 <select name="visaType" className="select select-bordered w-full max-w-xs outline-none">
                   <option disabled >
                     Select Visa item
@@ -91,6 +91,7 @@ const AddVisa = () => {
                   <option value='Official Visa'>Official Visa</option>
                 </select>
               </div>
+
               <div className="flex items-center justify-around gap-1 w-full">
                 <div className="form-control">
                   <label className="label cursor-pointer">
@@ -130,7 +131,7 @@ const AddVisa = () => {
             </div>
 
             {/* age and fee sec  */}
-            <div className="flex gap-3 items-center justify-between">
+            <div className="md:flex gap-3 items-center justify-between">
               <div className="form-control w-full">
                 <label className="label mb-2">
                   <span className="label-text">Age</span>
@@ -158,7 +159,7 @@ const AddVisa = () => {
             </div>
 
             {/* Validity and Applicatin Method  */}
-            <div className="flex gap-3 items-center justify-between">
+            <div className="md:flex gap-3 items-center justify-between">
               <div className="form-control w-full">
                 <label className="label mb-2">
                   <span className="label-text">Validity</span>

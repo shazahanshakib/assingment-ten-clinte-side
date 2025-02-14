@@ -23,7 +23,7 @@ const AllVisa = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 my-10 mx-20">
+      <div className="grid gap-4 my-10 mx-5 md:grid-cols-2 lg:grid-cols-3 sm:mx-4 lg:mx-5 xl:mx-20">
         {
             allVisaItem?.map(visas=> <SingleVisa key={visas?._id} visas={visas}></SingleVisa>)
         }

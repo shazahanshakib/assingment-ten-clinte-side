@@ -27,7 +27,7 @@ const LatestViseSec = () => {
         <h1 className="text-center text-6xl font-bold">Latest Visa Section</h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-7 my-10 mx-40">
+      <div className="grid gap-7 my-10 mx-5 md:grid-cols-2 lg:grid-cols-3 sm:mx-4 lg:mx-5 xl:mx-20">
         {visases?.map((visas) => (
           <SingleVisa key={visas?._id} visas={visas}></SingleVisa>
         ))}
