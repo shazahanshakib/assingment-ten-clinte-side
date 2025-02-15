@@ -41,7 +41,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,black,transparent,black)] opacity-70"></div>
           <div className="absolute flex flex-col justify-center items-center w-full px-4 md:items-start md:mx-14">
             <h1 className=" text-4xl font-black text-center sm:text-6xl">
-              We are professional <br /> expert in immigration
+              We are <br /> expert in immigration
             </h1>
             <p className="my-10 text-center">
               We are a well known organigation to travel people in the many
@@ -63,7 +63,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,black,transparent,black)] opacity-70"></div>
           <div className="absolute flex flex-col justify-center items-center w-full px-4 md:items-start md:mx-14">
             <h1 className=" text-4xl font-black text-center sm:text-6xl">
-              We are professional <br /> expert in immigration
+              We are professional <br />  in immigration
             </h1>
             <p className="my-10 text-center">
               We are a well known organigation to travel people in the many
