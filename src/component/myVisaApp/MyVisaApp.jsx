@@ -9,16 +9,16 @@ const MyVisaApp = () => {
   // console.log(myVisaApply);
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearch = () => {
-    // console.log(searchQuery);
+  // const handleSearch = () => {
+  //   // console.log(searchQuery);
 
-    fetch(`http://localhost:5000/visaapply?searchParams=${searchQuery}`)
-      .then((res) => res.json())
-      .then((result) => {
-        console.log(result);
-        setMyVisa(result)
-      });
-  };
+  //   fetch(`http://localhost:5000/visaapply?searchParams=${searchQuery}`)
+  //     .then((res) => res.json())
+  //     .then((result) => {
+  //       console.log(result);
+  //       setMyVisa(result)
+  //     });
+  // };
   return (
     <div
       className="relative h-auto bg-cover bg-center flex flex-col items-center justify-center"
