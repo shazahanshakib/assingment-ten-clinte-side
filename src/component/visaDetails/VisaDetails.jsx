@@ -50,7 +50,7 @@ const VisaDetails = () => {
 
     setIsModalOpen(false)
   };
-  // ami ki ar parbo
+  
 
   return (
     <div className=" bg-white text-black shadow-xl p-4 px-60">

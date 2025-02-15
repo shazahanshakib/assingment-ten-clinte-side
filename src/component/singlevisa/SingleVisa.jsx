@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const SingleVisa = ({ visas, myAdd, myVisa, setMyVisa, setExatItem, setIsModalOpen }) => {
-  // console.log(myAdd)
-  const {
-    countryImage,
-    countryName,
-    visaType,
-    processingTime,
-    fee,
-    Validity,
-    appMethod,
-    _id
-  } = visas;
+// const SingleVisa = ({ visas, myAdd, myVisa, setMyVisa, setExatItem, setIsModalOpen }) => {
+//   // console.log(myAdd)
+//   const {
+//     countryImage,
+//     countryName,
+//     visaType,
+//     processingTime,
+//     fee,
+//     Validity,
+//     appMethod,
+//     _id
+//   } = visas;
 
   
 
