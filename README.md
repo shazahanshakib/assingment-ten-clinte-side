@@ -8,6 +8,8 @@ This website is a visa navigator website where i can add visas and apply.
 1. React router
 2. sign in with password and email
 3. create user with password and email
+4. Build backand with express js
+5. add search functionality
 
 # Npm paskage
 1. React
