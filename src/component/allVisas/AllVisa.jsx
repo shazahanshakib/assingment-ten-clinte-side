@@ -61,7 +61,7 @@ const AllVisa = () => {
           Service we provide
         </h3>
         <h1 className="text-center text-6xl font-bold">
-          Outstanding Immigration <br /> Visa Service
+          Outstanding Immigration <br />
         </h1>
       </div>
 
