@@ -2,6 +2,7 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 import { useLoaderData } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
+import { toast } from "react-toastify";
 
 const VisaDetails = () => {
   const visaDet = useLoaderData();
@@ -44,6 +45,7 @@ const VisaDetails = () => {
     .then(res=>res.json())
     .then(data=>{
       console.log(data)
+      toast.success("Apply successfully!");
     })
 
     setIsModalOpen(false)

@@ -5,6 +5,8 @@ import logoimg4 from "../../../public/slide4.jpg";
 import logoimg5 from "../../../public/slide5.jpg";
 
 const Home = () => {
+
+  
   return (
     <div >
       <div className="carousel w-full">

@@ -60,7 +60,7 @@ const MyAddedVisa = () => {
           );
           Swal.fire({
             title: "success!",
-            text: "Perfectly updated a coffe",
+            text: "Perfectly updated a Visa",
             icon: "success",
             confirmButtonText: "Add",
           });

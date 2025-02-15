@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../authProvider/AuthProvider";
+import { toast } from "react-toastify";
 
 
 const AddVisa = () => {
 
     const {user}= useContext(AuthContext)
     const userEmail=user.email;
-    console.log(userEmail)
+    // console.log(userEmail)
     const handleAddVisa=(e)=>{
         e.preventDefault();
         const form = e.target;
@@ -41,7 +42,10 @@ const AddVisa = () => {
         .then(res=>res.json())
         .then(data=>{
           console.log(data)
+          toast.success("Visa Added successfully!");
         })
+
+        form.reset();
     }
   return (
     <div className="hero bg-base-200 min-h-screen">
@@ -86,7 +90,7 @@ const AddVisa = () => {
                   <option disabled >
                     Select Visa item
                   </option>
-                  <option value="Tourist Vise">Tourist Visa</option>
+                  <option value="Tourist Visa">Tourist Visa</option>
                   <option value="student Visa">Student Visa</option>
                   <option value='Official Visa'>Official Visa</option>
                 </select>

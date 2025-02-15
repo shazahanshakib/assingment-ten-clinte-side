@@ -1,8 +1,21 @@
-# React + Vite
+## Assignment-Ten
+## Visa Naviga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Purpose
+This website is a visa navigator website where i can add visas and apply.
 
-Currently, two official plugins are available:
+# Key fetures
+1. React router
+2. sign in with password and email
+3. create user with password and email
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Npm paskage
+1. React
+2. Tailwind
+3. React router
+4. AOS package
+5. Daisy ui
+6. Firebase Authentication
+
+# Live Url
+Live url: https://celebrated-florentine-51ea90.netlify.app/

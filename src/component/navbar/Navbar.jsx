@@ -10,19 +10,37 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/" className={({ isActive }) =>
+          isActive ? "bg-[#83cd20] font-bold" : ""
+        }>Home</NavLink>
       </li>
       <li>
-        <NavLink to="/allvisa">All Visas</NavLink>
+        <NavLink to="/allvisa"
+        className={({ isActive }) =>
+          isActive ? "bg-[#83cd20] font-bold" : ""
+        }
+        >All Visas</NavLink>
       </li>
       <li>
-        <NavLink to="/addvisa">Add Visa</NavLink>
+        <NavLink to="/addvisa"
+        className={({ isActive }) =>
+          isActive ? "bg-[#83cd20] font-bold" : ""
+        }
+        >Add Visa</NavLink>
       </li>
       <li>
-        <NavLink to="/myaddedvisa">My Added Visa</NavLink>
+        <NavLink to="/myaddedvisa"
+        className={({ isActive }) =>
+          isActive ? "bg-[#83cd20] font-bold" : ""
+        }
+        >My Added Visa</NavLink>
       </li>
       <li>
-        <NavLink to="/myvisaapp">My Visa Application</NavLink>
+        <NavLink to="/myvisaapp"
+        className={({ isActive }) =>
+          isActive ? "bg-[#83cd20] font-bold" : ""
+        }
+        >My Visa Application</NavLink>
       </li>
     </>
   );
@@ -82,30 +100,36 @@ const Navbar = () => {
           <h1 className="text-4xl sm:text-5xl font-bold">VISAGO</h1>
         </div>
 
-        <div className="hidden lg:flex">
+        <div className="hidden ml-6 lg:flex">
           <ul className="menu menu-horizontal px-1 text-[16px]">{links}</ul>
         </div>
       </div>
 
       <div className=" hidden px-4 lg:block">
         {user ? (
-          <div className="flex items-center gap-3 mr-5">
-            <Link to="/myprofile" className="text-xl">
-              <img className="w-[20px] h-[20px] rounded-lg" src={user.photoURL}></img>
-            </Link>
+          <div className="relative flex group items-center gap-3 mr-5">
+             <img className="w-10 h-10 rounded-full cursor-pointer" src={user?.photoURL} alt="User" />
 
-            <button onClick={handleSignOut} className="btn hidden">
+
+            <div className="absolute right-0 top-12 w-40 bg-white shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+              <p className="text-center font-semibold text-gray-800">{user?.displayName}</p>
+              <button onClick={handleSignOut} className="w-full mt-2 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
+                Logout
+              </button>
+            </div>
+
+            {/* <button onClick={handleSignOut} className="btn hidden">
               Log out
-            </button>
+            </button> */}
           </div>
         ) : (
           <div className="pr-8">
-            <NavLink
+            <Link
               to="/singin"
               className="btn bg-[#83cd20] text-black text-xl"
             >
               Sing In
-            </NavLink>
+            </Link>
           </div>
         )}
       </div>
