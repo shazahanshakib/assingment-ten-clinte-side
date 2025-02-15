@@ -16,6 +16,8 @@ This website is a visa navigator website where i can add visas and apply.
 4. AOS package
 5. Daisy ui
 6. Firebase Authentication
+7. Mongo Db
+7. Express js
 
 # Live Url
 Live url: https://celebrated-florentine-51ea90.netlify.app/
