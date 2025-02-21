@@ -13,7 +13,7 @@ const AllVisa = () => {
   // console.log(filtervisa);
 
   useEffect(()=>{
-    fetch(`http://localhost:5000/allvisa?searchParams=${filtervisa}`)
+    fetch(`https://assingment-ten-server-side.vercel.app/allvisa?searchParams=${filtervisa}`)
     .then(res=>res.json())
     .then(Data=>{
       // console.log(Data)

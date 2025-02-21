@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const LatestViseSec = () => {
   const [visases, setVisas] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/latestvisa")
+    fetch("https://assingment-ten-server-side.vercel.app/latestvisa")
       .then((res) => res.json())
       .then((Data) => {
         // console.log(Data)

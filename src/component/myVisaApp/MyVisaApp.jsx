@@ -12,7 +12,7 @@ const MyVisaApp = () => {
   const handleSearch = () => {
     // console.log(searchQuery);
 
-    fetch(`http://localhost:5000/visaapply?searchParams=${searchQuery}`)
+    fetch(`https://assingment-ten-server-side.vercel.app/visaapply?searchParams=${searchQuery}`)
       .then((res) => res.json())
       .then((result) => {
         console.log(result);

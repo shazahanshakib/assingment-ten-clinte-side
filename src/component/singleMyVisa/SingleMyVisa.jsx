@@ -21,7 +21,7 @@ const SingleMyVisa = ({myvisas, myVisa, setMyVisa}) => {
           confirmButtonText: "Yes, delete it!",
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`http://localhost:5000/visaapply/${id}`, {
+            fetch(`https://assingment-ten-server-side.vercel.app/visaapply/${id}`, {
               method: "DELETE",
             })
               .then((res) => res.json())

@@ -14,8 +14,6 @@ const SingleVisa = ({ visas, myAdd, myVisa, setMyVisa, setExatItem, setIsModalOp
     _id
   } = visas;
 
-  
-
 
   const handleDelet = (id) => {
           console.log(id);
@@ -29,7 +27,7 @@ const SingleVisa = ({ visas, myAdd, myVisa, setMyVisa, setExatItem, setIsModalOp
             confirmButtonText: "Yes, delete it!",
           }).then((result) => {
             if (result.isConfirmed) {
-              fetch(`http://localhost:5000/allvisa/${id}`, {
+              fetch(`https://assingment-ten-server-side.vercel.app/allvisa/${id}`, {
                 method: "DELETE",
               })
                 .then((res) => res.json())

@@ -35,7 +35,7 @@ const VisaDetails = () => {
     const newApply= {fName, lName, email, fee, selectedDate, countryName, countryImage, visaType, processingTime, appMethod, Validity}
     // console.log("perfect", fName, lName, email, fee, selectedDate);
 
-    fetch('http://localhost:5000/visaapply',{
+    fetch('https://assingment-ten-server-side.vercel.app/visaapply',{
       method:'POST',
       headers:{
         "Content-Type": "application/json",

@@ -32,7 +32,7 @@ const AddVisa = () => {
 
         console.log(newVisa)
 
-        fetch('http://localhost:5000/allvisa',{
+        fetch('https://assingment-ten-server-side.vercel.app/allvisa',{
           method:'POST',
           headers:{
             "Content-Type": "application/json",

@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/allvisa",
         element:<AllVisa></AllVisa>,
-        loader: () => fetch("http://localhost:5000/allvisa"),
+        loader: () => fetch("https://assingment-ten-server-side.vercel.app/allvisa"),
       },
       {
         path: "/createuser",
@@ -46,17 +46,17 @@ const router = createBrowserRouter([
       {
         path:"/visadetails/:id",
         element:<PrivateRoute><VisaDetails></VisaDetails></PrivateRoute>,
-        loader:({params})=> fetch(`http://localhost:5000/allvisa/${params.id}`)
+        loader:({params})=> fetch(`https://assingment-ten-server-side.vercel.app/allvisa/${params.id}`)
       },
       {
         path:"/myvisaapp",
         element:<PrivateRoute><MyVisaApp></MyVisaApp></PrivateRoute>,
-        loader:()=>fetch('http://localhost:5000/visaapply')
+        loader:()=>fetch('https://assingment-ten-server-side.vercel.app/visaapply')
       },
       {
         path:"/myaddedvisa",
         element:<PrivateRoute><MyAddedVisa></MyAddedVisa></PrivateRoute>,
-        loader: () => fetch("http://localhost:5000/allvisa"),
+        loader: () => fetch("https://assingment-ten-server-side.vercel.app/allvisa"),
       }
     ],
   },
